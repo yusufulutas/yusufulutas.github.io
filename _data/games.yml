@@ -17,7 +17,9 @@
     - Implemented a procedural camera motion system driven by character's hand and weapon movements with settings exposed to designers.
     - Updated UI screens, gamepad navigation and input glyphs for PS5, Xbox Series X|S.
   image:
-  links: []
+  links:
+    - label: Steam
+      url: https://store.steampowered.com/app/3115160/
   featured: false
   section: professional
 
@@ -34,7 +36,9 @@
     - Optimized skeletal animation performance to reduce CPU usage in scenes with large numbers of enemies.
     - Co-led Xbox Series X|S and PS5 certification, assessing platform requirements, planning compliance testing and issue resolution. Both passed on their first submission.
   image:
-  links: []
+  links:
+    - label: Steam
+      url: https://store.steampowered.com/app/2321780/
   featured: false
   section: professional
 
@@ -50,7 +54,9 @@
     - Implemented a VFX management system with particle pooling, distance and significance based prioritization.
     - Replaced UniStorm's sky and lighting systems with a custom day and night cycle using a single light source and simplified shaders, reducing CPU and GPU overhead on Nintendo Switch.
   image:
-  links: []
+  links:
+    - label: Steam
+      url: https://store.steampowered.com/app/2016460/
   featured: false
   section: professional
 
@@ -66,7 +72,9 @@
     - Integrated haptics into the existing effect system, so vibration fires on the relevant actions and events and designers can use it like any other effect.
     - Developed a native C++ plugin with C# bindings for DualSense integration in Unity, including PC support.
   image:
-  links: []
+  links:
+    - label: Steam
+      url: https://store.steampowered.com/app/1604030/
   featured: false
   section: professional
 
@@ -81,7 +89,9 @@
     - Implemented PlayStation SDK integration layer for the existing custom save system for PS4 and PS5 without replacing the game's save architecture.
     - Investigated bottlenecks for console platforms and prepared optimization plans.
   image:
-  links: []
+  links:
+    - label: Steam
+      url: https://store.steampowered.com/app/962130/
   featured: false
   section: professional
 
