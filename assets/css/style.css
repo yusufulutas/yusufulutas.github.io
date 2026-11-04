@@ -159,6 +159,20 @@ main {
   }
 }
 
+.about-still {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .about-video {
+    display: none;
+  }
+
+  .about-still {
+    display: block;
+  }
+}
+
 .location {
   color: var(--muted);
 }

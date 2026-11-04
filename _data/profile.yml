@@ -22,8 +22,9 @@ about:
     projects that I've worked on. Please feel free to reach out.
 
 # Picture next to the text on the home page.
-home_image: /assets/img/tales-of-the-shire.webp
-home_image_alt: Tales of the Shire
+home_image: /assets/img/showreel.webp
+home_video: /assets/img/showreel.mp4   # optional, plays muted on loop, home_image is its still frame
+home_image_alt: Clips from Tales of the Shire, RimWorld, Warhammer 40,000 Boltgun 2, V Rising, Grounded, Slap Kings and Starship Troopers
 home_image_size: [493, 282]   # width, height in pixels
 
 # Links without a url are hidden.

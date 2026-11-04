@@ -4,8 +4,14 @@ layout: default
 {%- assign profile = site.data.profile -%}
 {%- capture root_link %}]({{ '/' | relative_url }}{% endcapture -%}
 <section class="about">
+  {%- capture size %}{% if profile.home_image_size %} width="{{ profile.home_image_size[0] }}" height="{{ profile.home_image_size[1] }}"{% endif %}{% endcapture -%}
+  {%- if profile.home_video %}
+  <video class="about-image about-video" autoplay muted loop playsinline{% if profile.home_image %} poster="{{ profile.home_image | relative_url }}"{% endif %} aria-label="{{ profile.home_image_alt | escape }}"{{ size }}>
+    <source src="{{ profile.home_video | relative_url }}" type="video/mp4">
+  </video>
+  {%- endif %}
   {%- if profile.home_image %}
-  <img class="about-image" src="{{ profile.home_image | relative_url }}" alt="{{ profile.home_image_alt | escape }}"{% if profile.home_image_size %} width="{{ profile.home_image_size[0] }}" height="{{ profile.home_image_size[1] }}"{% endif %}>
+  <img class="about-image{% if profile.home_video %} about-still{% endif %}" src="{{ profile.home_image | relative_url }}" alt="{{ profile.home_image_alt | escape }}"{{ size }}>
   {%- endif %}
   {%- for paragraph in profile.about %}
   {{ paragraph | replace: "](/", root_link | markdownify }}
