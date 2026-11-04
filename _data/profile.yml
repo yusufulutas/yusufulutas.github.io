@@ -22,8 +22,9 @@ about:
     projects that I've worked on. Please feel free to reach out.
 
 # Picture next to the text on the home page.
-home_image:         # e.g. /assets/img/games/boltgun-2.webp
-home_image_alt:
+home_image: /assets/img/tales-of-the-shire.webp
+home_image_alt: Tales of the Shire
+home_image_size: [493, 282]   # width, height in pixels
 
 # Links without a url are hidden.
 links:

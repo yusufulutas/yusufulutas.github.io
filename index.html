@@ -5,7 +5,7 @@ layout: default
 {%- capture root_link %}]({{ '/' | relative_url }}{% endcapture -%}
 <section class="about">
   {%- if profile.home_image %}
-  <img class="about-image" src="{{ profile.home_image | relative_url }}" alt="{{ profile.home_image_alt | escape }}" width="460" height="215">
+  <img class="about-image" src="{{ profile.home_image | relative_url }}" alt="{{ profile.home_image_alt | escape }}"{% if profile.home_image_size %} width="{{ profile.home_image_size[0] }}" height="{{ profile.home_image_size[1] }}"{% endif %}>
   {%- endif %}
   {%- for paragraph in profile.about %}
   {{ paragraph | replace: "](/", root_link | markdownify }}
