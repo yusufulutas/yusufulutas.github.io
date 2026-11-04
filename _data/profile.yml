@@ -8,7 +8,7 @@ description: Senior Programmer with over 10 years of commercial game development
 # Home page text, one entry per paragraph. Markdown links work.
 about:
   - >-
-    Hello, thanks for visiting my portfolio. Here is my [CV](/assets/cv.pdf)
+    Hello, thanks for visiting my portfolio. Here is my [CV](/assets/YusufUlutas_CV.pdf)
     and here are the [projects](/projects/) I've worked on throughout my career.
   - >-
     Currently I'm living in Middlesbrough, UK and working at Auroch Digital,
@@ -36,7 +36,7 @@ links:
   - label: GitHub
     url:
   - label: CV
-    url: /assets/cv.pdf
+    url: /assets/YusufUlutas_CV.pdf
 
 # Top bar labels and page headings.
 headings:
