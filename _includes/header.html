@@ -4,13 +4,9 @@
 {%- assign home = '/' | relative_url -%}
 {%- assign projects = '/projects/' | relative_url -%}
 <nav class="topbar" aria-label="Main">
-  <a class="brand" href="{{ home }}">
-    {%- if profile.photo -%}
-      <img src="{{ profile.photo | relative_url }}" alt="{{ profile.name | escape }}" width="44" height="44">
-    {%- else -%}
-      {{ profile.name }}
-    {%- endif -%}
-  </a>
+  {%- if profile.photo %}
+  <a class="brand" href="{{ home }}"><img src="{{ profile.photo | relative_url }}" alt="{{ profile.name | escape }}" width="44" height="44"></a>
+  {%- endif %}
   <ul>
     {%- if headings.home %}
     <li><a href="{{ home }}"{% if page.url == "/" %} aria-current="page"{% endif %}>{{ headings.home }}</a></li>
