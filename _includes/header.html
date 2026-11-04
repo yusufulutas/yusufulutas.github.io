@@ -1,22 +1,25 @@
-{%- assign profile = site.data.profile -%}
 {%- assign headings = profile.headings -%}
 {%- assign links = profile.links | where_exp: "l", "l.url" -%}
 {%- assign personal = site.data.games | where: "section", "personal" -%}
 {%- assign home = '/' | relative_url -%}
+{%- assign projects = '/projects/' | relative_url -%}
 <nav class="topbar" aria-label="Main">
   <a class="brand" href="{{ home }}">
     {%- if profile.photo -%}
-      <img src="{{ profile.photo | relative_url }}" alt="{{ profile.name | escape }}" width="40" height="40">
+      <img src="{{ profile.photo | relative_url }}" alt="{{ profile.name | escape }}" width="44" height="44">
     {%- else -%}
       {{ profile.name }}
     {%- endif -%}
   </a>
   <ul>
+    {%- if headings.home %}
+    <li><a href="{{ home }}"{% if page.url == "/" %} aria-current="page"{% endif %}>{{ headings.home }}</a></li>
+    {%- endif %}
     {%- if headings.professional %}
-    <li><a href="{{ home }}#shipped">{{ headings.professional }}</a></li>
+    <li><a href="{{ projects }}"{% if page.url == "/projects/" %} aria-current="page"{% endif %}>{{ headings.professional }}</a></li>
     {%- endif %}
     {%- if personal.size > 0 and headings.personal %}
-    <li><a href="{{ home }}#personal">{{ headings.personal }}</a></li>
+    <li><a href="{{ projects }}#personal">{{ headings.personal }}</a></li>
     {%- endif %}
     {%- for link in links %}
     {%- assign first = link.url | slice: 0 %}
@@ -25,8 +28,12 @@
   </ul>
 </nav>
 <header class="banner">
+  {%- if page_heading %}
+  <h1>{{ page_heading }}</h1>
+  {%- else %}
   <h1>{{ profile.name }}</h1>
   {%- if profile.title %}
   <p>{{ profile.title }}</p>
+  {%- endif %}
   {%- endif %}
 </header>

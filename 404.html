@@ -3,4 +3,6 @@ layout: default
 title: "404"
 permalink: /404.html
 ---
-<p class="not-found">404</p>
+{%- if site.data.profile.headings.home %}
+<p class="not-found"><a href="{{ '/' | relative_url }}">{{ site.data.profile.headings.home }}</a></p>
+{%- endif %}

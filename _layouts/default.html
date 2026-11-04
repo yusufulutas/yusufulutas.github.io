@@ -5,8 +5,12 @@
 {%- elsif covers.size > 0 -%}
   {%- assign og_image = "/assets/img/games/" | append: covers.first.image -%}
 {%- endif -%}
+{%- assign page_heading = page.title -%}
+{%- if page.heading -%}
+  {%- assign page_heading = profile.headings[page.heading] -%}
+{%- endif -%}
 {%- capture title -%}
-  {%- if page.title %}{{ page.title }} · {% endif -%}
+  {%- if page_heading %}{{ page_heading }} · {% endif -%}
   {{ profile.name }}{% if profile.title %} · {{ profile.title }}{% endif -%}
 {%- endcapture -%}
 {%- assign description = profile.intro | default: profile.title -%}

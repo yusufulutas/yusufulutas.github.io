@@ -88,6 +88,10 @@ a:focus-visible {
   text-decoration: underline;
 }
 
+.topbar a[aria-current="page"] {
+  color: var(--head);
+}
+
 .brand {
   color: var(--head);
 }
@@ -130,16 +134,37 @@ main {
   padding-top: 3rem;
 }
 
+.about::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .about p + p {
-  margin-top: 1rem;
+  margin-top: 1.25rem;
+}
+
+.about-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 40rem) {
+  .about-image {
+    float: right;
+    width: 50%;
+    margin: 0.4rem 0 1rem 1.5rem;
+  }
 }
 
 .location {
   color: var(--muted);
 }
 
-.games {
-  margin-top: 4rem;
+.games + .games {
+  margin-top: 5rem;
 }
 
 .games > h2 {

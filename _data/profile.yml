@@ -3,6 +3,13 @@ title: Senior Programmer
 location: United Kingdom
 intro: Senior Programmer with over 10 years of commercial game development in C++, C#, Unreal Engine and Unity, focused on UI and gameplay systems, console development and performance optimization.
 
+# More paragraphs for the home page, shown after intro. Markdown links work.
+about: []
+
+# Picture next to the text on the home page.
+home_image:         # e.g. /assets/img/games/boltgun-2.webp
+home_image_alt:
+
 # Links without a url are hidden.
 links:
   - label: Email
@@ -14,10 +21,12 @@ links:
   - label: CV
     url: /assets/cv.pdf
 
+# Top bar labels and page headings.
 headings:
+  home: Home
   professional: Shipped games
   personal: Personal projects
 
 photo:              # optional, round picture in the top bar, e.g. /assets/img/me.jpg
-og_image:         # optional, e.g. /assets/img/og.png (falls back to the first game cover)
+og_image:           # optional, e.g. /assets/img/og.png (falls back to the first game cover)
 favicon:            # optional, e.g. /assets/favicon.png
