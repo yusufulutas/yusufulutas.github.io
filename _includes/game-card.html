@@ -29,6 +29,13 @@
     {%- if game.role %}
     <p class="game-role">{{ game.role }}</p>
     {%- endif %}
+    {%- if game.notes.size > 0 %}
+    <ul class="notes">
+      {%- for note in game.notes %}
+      <li>{{ note }}</li>
+      {%- endfor %}
+    </ul>
+    {%- endif %}
     {%- if links.size > 0 %}
     <ul class="links">
       {%- for link in links %}

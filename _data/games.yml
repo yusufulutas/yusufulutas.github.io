@@ -5,61 +5,81 @@
 #     - label: Steam
 #       url: https://store.steampowered.com/app/...
 
-- title: Boltgun 2
-  studio:
+- title: "Warhammer 40,000: Boltgun 2"
+  studio: Auroch Digital
   publisher:
   year:
-  platforms: []
-  tech: []
-  role:
+  platforms: [PC, PS5, Xbox Series X|S]
+  tech: [Unreal Engine 5, C++]
+  role: Senior Programmer
+  notes:
+    - Refactored the save system, including save data structures, save management logic and related UI screens to support multiple playthroughs.
+    - Implemented a procedural camera motion system driven by character's hand and weapon movements with settings exposed to designers.
+    - Updated UI screens, gamepad navigation and input glyphs for PS5, Xbox Series X|S.
   image:
   links: []
   featured: false
   section: professional
 
-- title: "Starship Troopers: Ultimate Bug War"
-  studio:
+- title: "Starship Troopers: Ultimate Bug War!"
+  studio: Auroch Digital
   publisher:
   year:
-  platforms: []
-  tech: []
-  role:
-  image:
-  links: []
-  featured: false
-  section: professional
-
-- title: Grounded
-  studio:
-  publisher:
-  year:
-  platforms: []
-  tech: []
-  role:
-  image:
-  links: []
-  featured: false
-  section: professional
-
-- title: V Rising
-  studio:
-  publisher:
-  year:
-  platforms: []
-  tech: []
-  role:
+  platforms: [PC, PS5, Xbox Series X|S]
+  tech: [Unreal Engine 5, C++]
+  role: Senior Programmer
+  notes:
+    - Profiled and optimised Niagara effects using Unreal Insights, moving suitable simulations to the GPU, simplifying selected emitters and configuring effect scalability, culling distances and particle pooling to reduce CPU overhead.
+    - Implemented Xbox Series X|S and PS5 user authentication and controller handling systems.
+    - Optimized skeletal animation performance to reduce CPU usage in scenes with large numbers of enemies.
+    - Co-led Xbox Series X|S and PS5 certification, assessing platform requirements, planning compliance testing and issue resolution. Both passed on their first submission.
   image:
   links: []
   featured: false
   section: professional
 
 - title: Tales of the Shire
-  studio:
+  studio: Auroch Digital
   publisher:
   year:
-  platforms: []
-  tech: []
-  role:
+  platforms: [Nintendo Switch]
+  tech: [Unity, C#]
+  role: Senior Programmer
+  notes:
+    - Developed animation optimization tools to remove redundant keyframes and bake rigging constraints across 500+ animation clips, reducing memory usage and CPU overhead.
+    - Implemented a VFX management system with particle pooling, distance and significance based prioritization.
+    - Replaced UniStorm's sky and lighting systems with a custom day and night cycle using a single light source and simplified shaders, reducing CPU and GPU overhead on Nintendo Switch.
+  image:
+  links: []
+  featured: false
+  section: professional
+
+- title: V Rising
+  studio: Auroch Digital
+  publisher:
+  year:
+  platforms: [PC, PS5]
+  tech: [Unity, C#]
+  role: Senior Programmer
+  notes:
+    - Extended the existing FMOD audio system for PS5, implementing separate output paths for game audio, the DualSense speaker and audio driven haptics using Sony's controller APIs.
+    - Integrated haptics into the existing effect system, so vibration fires on the relevant actions and events and designers can use it like any other effect.
+    - Developed a native C++ plugin with C# bindings for DualSense integration in Unity, including PC support.
+  image:
+  links: []
+  featured: false
+  section: professional
+
+- title: Grounded
+  studio: Double Eleven
+  publisher:
+  year:
+  platforms: [PS4, PS5, Nintendo Switch]
+  tech: [Unreal Engine 4, C++]
+  role: Senior Programmer
+  notes:
+    - Implemented PlayStation SDK integration layer for the existing custom save system for PS4 and PS5 without replacing the game's save architecture.
+    - Investigated bottlenecks for console platforms and prepared optimization plans.
   image:
   links: []
   featured: false
@@ -69,9 +89,14 @@
   studio: Double Eleven
   publisher:
   year:
-  platforms: []
-  tech: []
-  role:
+  platforms: [PS4, Xbox One]
+  tech: [Unity, C#]
+  role: Senior Programmer
+  notes:
+    - Developed a UI management system handling nested menus, navigation history, focus management and screen transitions to support gamepad navigation using Gameface (HTML, CSS, JS).
+    - Optimized string handling to reduce memory allocations and garbage collection overhead.
+    - Split map generation across multiple frames to reduce frame stalls on PS4 and Xbox while keeping results identical to PC for the same seed.
+    - Developed custom UI elements, including scroll boxes, sortable tables, sliders and tooltips using Gameface.
   image:
   links: []
   featured: false
@@ -81,9 +106,11 @@
   studio: Gameguru
   publisher:
   year:
-  platforms: [Mobile]   # iOS / Android?
-  tech: []
-  role:
+  platforms: [iOS, Android]
+  tech: [Unity, C#]
+  role: Game Programmer
+  notes:
+    - Sole programmer responsible for gameplay, AI, progression and monetisation from concept to release; the game surpassed 100 million downloads across iOS and Android.
   image:
   links: []
   featured: false
@@ -93,9 +120,11 @@
   studio: Gameguru
   publisher: Lion Studios
   year:
-  platforms: [Mobile]   # iOS / Android?
-  tech: []
-  role:
+  platforms: [iOS, Android]
+  tech: [Unity, C#]
+  role: Game Programmer
+  notes:
+    - Sole programmer responsible for gameplay, progression and monetisation from concept to release; published by Lion Studios with over 50 million downloads across iOS and Android.
   image:
   links: []
   featured: false

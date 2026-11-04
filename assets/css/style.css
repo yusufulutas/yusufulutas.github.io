@@ -195,6 +195,19 @@ a:focus-visible {
   font-size: 0.925rem;
 }
 
+.notes {
+  margin-top: 0.6rem;
+  padding-left: 1.1rem;
+  list-style: disc;
+  color: var(--muted);
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.notes li + li {
+  margin-top: 0.35rem;
+}
+
 .links {
   display: flex;
   flex-wrap: wrap;

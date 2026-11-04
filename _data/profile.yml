@@ -1,14 +1,14 @@
 name: Yusuf Ulutaş
 title: Senior Programmer
-location:
-intro:
+location: United Kingdom
+intro: Senior Programmer with over 10 years of commercial game development in C++, C#, Unreal Engine and Unity, focused on UI and gameplay systems, console development and performance optimization.
 
 # Links without a url are hidden.
 links:
   - label: Email
-    url:            # mailto:name@example.com
+    url: mailto:ulutasyusuf@gmail.com
   - label: LinkedIn
-    url:
+    url: https://www.linkedin.com/in/yusufulutas
   - label: GitHub
     url:
   - label: CV
