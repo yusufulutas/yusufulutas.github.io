@@ -12,7 +12,7 @@ links:
   - label: GitHub
     url:
   - label: CV
-    url:            # /assets/cv.pdf once the file is there
+    url: /assets/cv.pdf
 
 headings:
   professional: Shipped games
