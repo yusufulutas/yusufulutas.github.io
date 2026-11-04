@@ -2,46 +2,35 @@
 {%- assign meta = "" | split: "" -%}
 {%- if game.studio %}{% assign meta = meta | push: game.studio %}{% endif -%}
 {%- if game.publisher %}{% assign meta = meta | push: game.publisher %}{% endif -%}
-{%- if game.year %}{% assign meta = meta | push: game.year %}{% endif -%}
 {%- if game.platforms.size > 0 -%}
   {%- assign platforms = game.platforms | join: ", " -%}
   {%- assign meta = meta | push: platforms -%}
 {%- endif -%}
+{%- if game.year %}{% assign meta = meta | push: game.year %}{% endif -%}
 {%- assign links = game.links | where_exp: "l", "l.url" -%}
-<article class="card">
+<article class="game">
+  <h3>{{ game.title }}{% if game.tech.size > 0 %} <span class="tech">({{ game.tech | join: ", " }})</span>{% endif %}</h3>
+  {%- if meta.size > 0 %}
+  <p class="meta">{{ meta | join: " · " }}</p>
+  {%- endif %}
+  {%- if game.role %}
+  <p class="game-role">{{ game.role }}</p>
+  {%- endif %}
+  {%- if game.notes.size > 0 %}
+  <ul class="notes">
+    {%- for note in game.notes %}
+    <li>{{ note }}</li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
   {%- if game.image %}
   <img class="cover" src="{{ '/assets/img/games/' | append: game.image | relative_url }}" alt="{{ game.title | escape }}" width="460" height="215"{% unless include.eager %} loading="lazy"{% endunless %} decoding="async">
-  {%- else %}
-  <div class="cover cover-empty" aria-hidden="true"><span>{{ game.title }}</span></div>
   {%- endif %}
-  <div class="card-body">
-    <h3>{{ game.title }}</h3>
-    {%- if meta.size > 0 %}
-    <p class="meta">{{ meta | join: " · " }}</p>
-    {%- endif %}
-    {%- if game.tech.size > 0 %}
-    <ul class="tags">
-      {%- for t in game.tech %}
-      <li>{{ t }}</li>
-      {%- endfor %}
-    </ul>
-    {%- endif %}
-    {%- if game.role %}
-    <p class="game-role">{{ game.role }}</p>
-    {%- endif %}
-    {%- if game.notes.size > 0 %}
-    <ul class="notes">
-      {%- for note in game.notes %}
-      <li>{{ note }}</li>
-      {%- endfor %}
-    </ul>
-    {%- endif %}
-    {%- if links.size > 0 %}
-    <ul class="links">
-      {%- for link in links %}
-      <li><a href="{{ link.url }}">{{ link.label }}</a></li>
-      {%- endfor %}
-    </ul>
-    {%- endif %}
-  </div>
+  {%- if links.size > 0 %}
+  <ul class="links">
+    {%- for link in links %}
+    <li><a href="{{ link.url }}">{{ link.label }}</a></li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
 </article>

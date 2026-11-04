@@ -18,5 +18,6 @@ headings:
   professional: Shipped games
   personal: Personal projects
 
-og_image:           # optional, e.g. /assets/img/og.png (falls back to the first game cover)
+photo:              # optional, round picture in the top bar, e.g. /assets/img/me.jpg
+og_image:         # optional, e.g. /assets/img/og.png (falls back to the first game cover)
 favicon:            # optional, e.g. /assets/favicon.png
