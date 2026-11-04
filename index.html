@@ -1,0 +1,35 @@
+---
+layout: default
+---
+{%- assign headings = site.data.profile.headings -%}
+{%- assign featured = site.data.games | where: "featured", true -%}
+{%- assign rest = site.data.games | where_exp: "g", "g.featured != true" -%}
+{%- assign games = featured | concat: rest -%}
+{%- assign work = games | where_exp: "g", "g.section != 'personal'" -%}
+{%- assign personal = games | where: "section", "personal" -%}
+
+{%- if work.size > 0 %}
+<section class="games">
+  {%- if headings.professional %}
+  <h2>{{ headings.professional }}</h2>
+  {%- endif %}
+  <div class="grid">
+    {%- for game in work %}
+    {% include game-card.html game=game eager=forloop.first %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}
+
+{%- if personal.size > 0 %}
+<section class="games">
+  {%- if headings.personal %}
+  <h2>{{ headings.personal }}</h2>
+  {%- endif %}
+  <div class="grid">
+    {%- for game in personal %}
+    {% include game-card.html game=game %}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif %}

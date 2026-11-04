@@ -1,0 +1,22 @@
+name: Yusuf Ulutaş
+title: Senior Programmer
+location:
+intro:
+
+# Links without a url are hidden.
+links:
+  - label: Email
+    url:            # mailto:name@example.com
+  - label: LinkedIn
+    url:
+  - label: GitHub
+    url:
+  - label: CV
+    url:            # /assets/cv.pdf once the file is there
+
+headings:
+  professional: Shipped games
+  personal: Personal projects
+
+og_image:           # optional, e.g. /assets/img/og.png (falls back to the first game cover)
+favicon:            # optional, e.g. /assets/favicon.png

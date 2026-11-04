@@ -1,0 +1,28 @@
+{%- assign profile = site.data.profile -%}
+{%- assign links = profile.links | where_exp: "l", "l.url" -%}
+<header class="wrap site-header">
+  <h1>
+    {%- if page.url == "/" or page.url == "/index.html" -%}
+      {{ profile.name }}
+    {%- else -%}
+      <a href="{{ '/' | relative_url }}">{{ profile.name }}</a>
+    {%- endif -%}
+  </h1>
+  {%- if profile.title %}
+  <p class="role">{{ profile.title }}</p>
+  {%- endif %}
+  {%- if profile.location %}
+  <p class="location">{{ profile.location }}</p>
+  {%- endif %}
+  {%- if profile.intro %}
+  <p class="intro">{{ profile.intro }}</p>
+  {%- endif %}
+  {%- if links.size > 0 %}
+  <ul class="contact">
+    {%- for link in links %}
+    {%- assign first = link.url | slice: 0 %}
+    <li><a href="{% if first == '/' %}{{ link.url | relative_url }}{% else %}{{ link.url }}{% endif %}">{{ link.label }}</a></li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+</header>

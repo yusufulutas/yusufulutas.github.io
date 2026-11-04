@@ -1,0 +1,102 @@
+# One entry per card, shown in this order (featured ones first).
+# Empty fields are not shown.
+#
+#   links:
+#     - label: Steam
+#       url: https://store.steampowered.com/app/...
+
+- title: Boltgun 2
+  studio:
+  publisher:
+  year:
+  platforms: []
+  tech: []
+  role:
+  image:
+  links: []
+  featured: false
+  section: professional
+
+- title: "Starship Troopers: Ultimate Bug War"
+  studio:
+  publisher:
+  year:
+  platforms: []
+  tech: []
+  role:
+  image:
+  links: []
+  featured: false
+  section: professional
+
+- title: Grounded
+  studio:
+  publisher:
+  year:
+  platforms: []
+  tech: []
+  role:
+  image:
+  links: []
+  featured: false
+  section: professional
+
+- title: V Rising
+  studio:
+  publisher:
+  year:
+  platforms: []
+  tech: []
+  role:
+  image:
+  links: []
+  featured: false
+  section: professional
+
+- title: Tales of the Shire
+  studio:
+  publisher:
+  year:
+  platforms: []
+  tech: []
+  role:
+  image:
+  links: []
+  featured: false
+  section: professional
+
+- title: RimWorld Console Edition
+  studio: Double Eleven
+  publisher:
+  year:
+  platforms: []
+  tech: []
+  role:
+  image:
+  links: []
+  featured: false
+  section: professional
+
+- title: Slap Kings
+  studio: Gameguru
+  publisher:
+  year:
+  platforms: [Mobile]   # iOS / Android?
+  tech: []
+  role:
+  image:
+  links: []
+  featured: false
+  section: professional
+
+- title: Fruit Clinic
+  studio: Gameguru
+  publisher: Lion Studios
+  year:
+  platforms: [Mobile]   # iOS / Android?
+  tech: []
+  role:
+  image:
+  links: []
+  featured: false
+  section: professional

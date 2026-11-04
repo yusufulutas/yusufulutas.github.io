@@ -1,0 +1,13 @@
+# User site (username.github.io): leave baseurl empty.
+# Project site (username.github.io/repo): set baseurl to "/repo".
+url: ""
+baseurl: ""
+lang: en
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - scripts/
+  - vendor/
+  - .bundle/
