@@ -107,8 +107,10 @@
     - Optimized string handling to reduce memory allocations and garbage collection overhead.
     - Split map generation across multiple frames to reduce frame stalls on PS4 and Xbox while keeping results identical to PC for the same seed.
     - Developed custom UI elements, including scroll boxes, sortable tables, sliders and tooltips using Gameface.
-  image:
-  links: []
+  image: rimworld-console.webp
+  links:
+    - label: PlayStation Store
+      url: https://store.playstation.com/en-gb/product/EP4415-CUSA31489_00-D11RIMWORLD00002/
   featured: false
   section: professional
 
@@ -121,21 +123,9 @@
   role: Game Programmer
   notes:
     - Sole programmer responsible for gameplay, AI, progression and monetisation from concept to release; the game surpassed 100 million downloads across iOS and Android.
-  image:
-  links: []
-  featured: false
-  section: professional
-
-- title: Fruit Clinic
-  studio: Gameguru
-  publisher: Lion Studios
-  year:
-  platforms: [iOS, Android]
-  tech: [Unity, C#]
-  role: Game Programmer
-  notes:
-    - Sole programmer responsible for gameplay, progression and monetisation from concept to release; published by Lion Studios with over 50 million downloads across iOS and Android.
-  image:
-  links: []
+  image: slap-kings.webp
+  links:
+    - label: Google Play
+      url: https://play.google.com/store/apps/details?id=mobi.gameguru.slapkings
   featured: false
   section: professional
