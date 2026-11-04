@@ -198,6 +198,16 @@ main {
   text-align: center;
 }
 
+.game h3 a {
+  color: inherit;
+  text-decoration-color: var(--muted);
+}
+
+.game h3 a:hover {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
 .tech {
   font-weight: 400;
   white-space: nowrap;
@@ -228,7 +238,7 @@ main {
   display: block;
   width: 100%;
   height: auto;
-  margin-top: 1.75rem;
+  margin-top: 1.25rem;
   aspect-ratio: 460 / 215;
   object-fit: cover;
   background: var(--band);

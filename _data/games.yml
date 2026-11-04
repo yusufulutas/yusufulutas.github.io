@@ -16,7 +16,7 @@
     - Refactored the save system, including save data structures, save management logic and related UI screens to support multiple playthroughs.
     - Implemented a procedural camera motion system driven by character's hand and weapon movements with settings exposed to designers.
     - Updated UI screens, gamepad navigation and input glyphs for PS5, Xbox Series X|S.
-  image:
+  image: boltgun-2.webp
   links:
     - label: Steam
       url: https://store.steampowered.com/app/3115160/
@@ -35,7 +35,7 @@
     - Implemented Xbox Series X|S and PS5 user authentication and controller handling systems.
     - Optimized skeletal animation performance to reduce CPU usage in scenes with large numbers of enemies.
     - Co-led Xbox Series X|S and PS5 certification, assessing platform requirements, planning compliance testing and issue resolution. Both passed on their first submission.
-  image:
+  image: starship-troopers-ubw.webp
   links:
     - label: Steam
       url: https://store.steampowered.com/app/2321780/
@@ -53,7 +53,7 @@
     - Developed animation optimization tools to remove redundant keyframes and bake rigging constraints across 500+ animation clips, reducing memory usage and CPU overhead.
     - Implemented a VFX management system with particle pooling, distance and significance based prioritization.
     - Replaced UniStorm's sky and lighting systems with a custom day and night cycle using a single light source and simplified shaders, reducing CPU and GPU overhead on Nintendo Switch.
-  image:
+  image: tales-of-the-shire.webp
   links:
     - label: Steam
       url: https://store.steampowered.com/app/2016460/
@@ -71,7 +71,7 @@
     - Extended the existing FMOD audio system for PS5, implementing separate output paths for game audio, the DualSense speaker and audio driven haptics using Sony's controller APIs.
     - Integrated haptics into the existing effect system, so vibration fires on the relevant actions and events and designers can use it like any other effect.
     - Developed a native C++ plugin with C# bindings for DualSense integration in Unity, including PC support.
-  image:
+  image: v-rising.webp
   links:
     - label: Steam
       url: https://store.steampowered.com/app/1604030/
@@ -88,7 +88,7 @@
   notes:
     - Implemented PlayStation SDK integration layer for the existing custom save system for PS4 and PS5 without replacing the game's save architecture.
     - Investigated bottlenecks for console platforms and prepared optimization plans.
-  image:
+  image: grounded.webp
   links:
     - label: Steam
       url: https://store.steampowered.com/app/962130/

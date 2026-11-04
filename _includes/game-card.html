@@ -9,9 +9,18 @@
 {%- if game.year %}{% assign meta = meta | push: game.year %}{% endif -%}
 {%- assign links = game.links | where_exp: "l", "l.url" -%}
 <article class="game">
-  <h3>{{ game.title }}{% if game.tech.size > 0 %} <span class="tech">({{ game.tech | join: ", " }})</span>{% endif %}</h3>
+  <h3>
+    {%- if links.size > 0 -%}
+      <a href="{{ links.first.url }}">{{ game.title }}</a>
+    {%- else -%}
+      {{ game.title }}
+    {%- endif -%}
+    {%- if game.tech.size > 0 %} <span class="tech">({{ game.tech | join: ", " }})</span>{% endif %}</h3>
   {%- if meta.size > 0 %}
   <p class="meta">{{ meta | join: " · " }}</p>
+  {%- endif %}
+  {%- if game.image %}
+  <img class="cover" src="{{ '/assets/img/games/' | append: game.image | relative_url }}" alt="{{ game.title | escape }}" width="460" height="215"{% unless include.eager %} loading="lazy"{% endunless %} decoding="async">
   {%- endif %}
   {%- if game.role %}
   <p class="game-role">{{ game.role }}</p>
@@ -22,9 +31,6 @@
     <li>{{ note }}</li>
     {%- endfor %}
   </ul>
-  {%- endif %}
-  {%- if game.image %}
-  <img class="cover" src="{{ '/assets/img/games/' | append: game.image | relative_url }}" alt="{{ game.title | escape }}" width="460" height="215"{% unless include.eager %} loading="lazy"{% endunless %} decoding="async">
   {%- endif %}
   {%- if links.size > 0 %}
   <ul class="links">
