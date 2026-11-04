@@ -13,7 +13,7 @@
   {%- if page_heading %}{{ page_heading }} · {% endif -%}
   {{ profile.name }}{% if profile.title %} · {{ profile.title }}{% endif -%}
 {%- endcapture -%}
-{%- assign description = profile.intro | default: profile.title -%}
+{%- assign description = profile.description | default: profile.title -%}
 <!doctype html>
 <html lang="{{ site.lang | default: 'en' }}">
 <head>

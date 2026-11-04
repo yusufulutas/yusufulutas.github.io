@@ -2,15 +2,13 @@
 layout: default
 ---
 {%- assign profile = site.data.profile -%}
+{%- capture root_link %}]({{ '/' | relative_url }}{% endcapture -%}
 <section class="about">
   {%- if profile.home_image %}
   <img class="about-image" src="{{ profile.home_image | relative_url }}" alt="{{ profile.home_image_alt | escape }}" width="460" height="215">
   {%- endif %}
-  {%- if profile.intro %}
-  <p>{{ profile.intro }}</p>
-  {%- endif %}
   {%- for paragraph in profile.about %}
-  {{ paragraph | markdownify }}
+  {{ paragraph | replace: "](/", root_link | markdownify }}
   {%- endfor %}
   {%- if profile.location %}
   <p class="location">{{ profile.location }}</p>

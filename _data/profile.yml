@@ -1,10 +1,25 @@
 name: Yusuf Ulutaş
-title: Senior Programmer
-location: United Kingdom
-intro: Senior Programmer with over 10 years of commercial game development in C++, C#, Unreal Engine and Unity, focused on UI and gameplay systems, console development and performance optimization.
+title: Senior Game Programmer
+location:
 
-# More paragraphs for the home page, shown after intro. Markdown links work.
-about: []
+# Used for search results and link previews, not shown on the page.
+description: Senior Programmer with over 10 years of commercial game development in C++, C#, Unreal Engine and Unity, focused on UI and gameplay systems, console development and performance optimization.
+
+# Home page text, one entry per paragraph. Markdown links work.
+about:
+  - >-
+    Hello, thanks for visiting my portfolio. Here is my [CV](/assets/cv.pdf)
+    and here are the [projects](/projects/) I've worked on throughout my career.
+  - >-
+    Currently I'm living in Middlesbrough, UK and working at Auroch Digital,
+    where we just shipped Warhammer 40,000: Boltgun 2. In the past I worked on
+    several console, PC and mobile games, and some of the games I developed
+    were downloaded millions of times. I started working on games before
+    graduating from university; after working 4 years on mobile games I
+    returned to university and finished my degree. My specialty is gameplay/UI
+    programming, debugging and optimization for less powerful platforms. I'd
+    love to [chat](mailto:ulutasyusuf@gmail.com) about new job opportunities or
+    projects that I've worked on. Please feel free to reach out.
 
 # Picture next to the text on the home page.
 home_image:         # e.g. /assets/img/games/boltgun-2.webp
