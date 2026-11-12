@@ -43,6 +43,7 @@ headings:
   home: Home
   professional: Shipped games
   personal: Personal projects
+  early: Early releases
 
 photo:              # optional, round picture in the top bar, e.g. /assets/img/me.jpg
 og_image:           # optional, e.g. /assets/img/og.png (falls back to the first game cover)

@@ -129,3 +129,45 @@
       url: https://play.google.com/store/apps/details?id=mobi.gameguru.slapkings
   featured: false
   section: professional
+
+- title: Fruit Clinic
+  links:
+    - label: YouTube
+      url: https://www.youtube.com/watch?v=jUM-Q_ljrMI
+  section: early
+
+- title: "Racing Fever: Moto"
+  links:
+    - label: App Store
+      url: https://apps.apple.com/no/app/racing-fever-moto/id1198232173
+  section: early
+
+- title: Shooting Simulator
+  links:
+    - label: Savronik
+      url: https://www.savronik.com.tr/en/solutions/simulation-solutions/shooting-simulator/
+  section: early
+
+- title: Flick Shoot 2
+  links:
+    - label: App Store
+      url: https://apps.apple.com/no/app/flick-shoot-2/id924476912
+  section: early
+
+- title: Bear Race
+  links:
+    - label: YouTube
+      url: https://www.youtube.com/watch?v=2Ycekq8HVLg
+  section: early
+
+- title: Monster Defender
+  links:
+    - label: YouTube
+      url: https://www.youtube.com/watch?v=MsQ-wbwO3Kc
+  section: early
+
+- title: Intern Rush
+  links:
+    - label: YouTube
+      url: https://www.youtube.com/watch?v=iLqMuri39w4
+  section: early

@@ -7,8 +7,9 @@ permalink: /projects/
 {%- assign featured = site.data.games | where: "featured", true -%}
 {%- assign rest = site.data.games | where_exp: "g", "g.featured != true" -%}
 {%- assign games = featured | concat: rest -%}
-{%- assign work = games | where_exp: "g", "g.section != 'personal'" -%}
+{%- assign work = games | where_exp: "g", "g.section != 'personal' and g.section != 'early'" -%}
 {%- assign personal = games | where: "section", "personal" -%}
+{%- assign early = games | where: "section", "early" -%}
 
 {%- if work.size > 0 %}
 <section id="shipped" class="games">
@@ -24,6 +25,17 @@ permalink: /projects/
   <h2>{{ headings.personal }}</h2>
   {%- endif %}
   {%- for game in personal %}
+  {% include game-card.html game=game %}
+  {%- endfor %}
+</section>
+{%- endif %}
+
+{%- if early.size > 0 %}
+<section id="early" class="games compact">
+  {%- if headings.early %}
+  <h2>{{ headings.early }}</h2>
+  {%- endif %}
+  {%- for game in early %}
   {% include game-card.html game=game %}
   {%- endfor %}
 </section>
