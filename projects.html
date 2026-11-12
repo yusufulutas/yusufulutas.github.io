@@ -7,7 +7,7 @@ permalink: /projects/
 {%- assign featured = site.data.games | where: "featured", true -%}
 {%- assign rest = site.data.games | where_exp: "g", "g.featured != true" -%}
 {%- assign games = featured | concat: rest -%}
-{%- assign work = games | where_exp: "g", "g.section != 'personal' and g.section != 'early'" -%}
+{%- assign work = games | where_exp: "g", "g.section != 'personal'" | where_exp: "g", "g.section != 'early'" -%}
 {%- assign personal = games | where: "section", "personal" -%}
 {%- assign early = games | where: "section", "early" -%}
 
